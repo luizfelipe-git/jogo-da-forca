@@ -1,12 +1,12 @@
 import "./index.css";
 import { useState } from "react";
 
-function BoasVindas(e) {
-   const [nomeInserido, setNomeInserido] = useState('');
-   const [jogadores, setJogadores] = useState([]);
-   const [num, setNum] = useState(0);
+function BoasVindas() {
+   const [nomeInserido, setNomeInserido] = useState<string>('');
+   const [jogadores, setJogadores] = useState<string[]>([]);
+   const [num, setNum] = useState<number>(0);
 
-   function handleSubmit(e) {
+   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
       e.preventDefault();
    }
 
@@ -31,7 +31,7 @@ function BoasVindas(e) {
 
          <div>Quadro de Pontuações:</div>
 
-         <span>{num === 1 ? alert(num) : null}</span>
+         {/* <span>{num === 1 ? alert(num) : null}</span> */}
       </div>
    )
 }
