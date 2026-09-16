@@ -6,7 +6,7 @@
     "url": "https://github.com/luizfelipe-git"
   },
   "private": true,
-  "version": "0.3.1",
+  "version": "0.3.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -15,6 +15,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^9.4.0",
+    "@mui/material": "^9.4.0",
     "bootstrap": "^5.3.8",
     "bun": "^1.4.0",
     "package-lock-only": "^0.0.4",
